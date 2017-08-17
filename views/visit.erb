@@ -1,33 +1,35 @@
-<h2> Записаться </h2>
-<p> Тут можно записаться в наш Barber Shop!</p>
+<h2> Запись</h2>
+<p> Тут можно записаться в наш Barber Schop, и выбрать мастера!</p>
 
+<form action="/visit" method="POST" role="form">
 
 <form>
   <div class="form-group">
-    <label>Ваше имя:</label><br/>
-    <input name="username" type="text" class="form-controll" placeholder="Введите Ваше имя"> <br/>
+    <label>Ваше имя:</label>
+    <input name="username" type="text" class="form-controll" placeholder="Введите Ваше имя">
     </div>
 
      <div class="form-group">
-    <label>Ваш телефон:</label><br/>
-    <input name="phone" type="text" class="form-controll" placeholder="Введите Ваше имя"> <br/>
+    <label>Ваш телефон:</label>
+    <input name="phone" type="text" class="form-controll" placeholder="Ваш номер телефона">
     </div>
 
      <div class="form-group">
-    <label>Когда Вас ожидать:</label><br/>
-    <input name="datetime" type="text" class="form-controll" placeholder="Введите дату и время"> <br/>
+    <label>Когда Вас ожидать:</label>
+    <input name="datetime" type="text" class="form-controll" placeholder="Введите дату/время">
     </div>
-<div class="form-group">
-    <label for="exampleFormControlSelect1">Выбирайте мастера в списке ниже:</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Альвина</option>
-      <option>Виктория</option>
+    
+      <div class="form-group">
+    <label>Выбирите мастера:</label>
+    <select name="barber" class="form-controll">
+      <option>Алла</option>
+      <option>Вика</option>
       <option>Даша</option>
-      <option>Ирина</option>
+      <option>Ира</option>
       <option>Катя</option>
     </select>
   </div>
 
-<button type="submit" class="btn btn-primary">Записаться</button> <br/>
+<button type="submit" class="btn btn-primary">Записаться</button>
 
 </form>
