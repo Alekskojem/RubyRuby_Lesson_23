@@ -21,6 +21,7 @@ post '/visit' do
 	@phone = params[:phone]
 	@datetime = params[:datetime]
 	@barber = params[:barber]
+	@color = params[:color]
 	
-	erb "OK, Имя посетителя #{@username}, контактный телфон #{@phone}, указано время #{@datetime}, имя мастера #{@barber}."
+	erb "OK, Имя посетителя #{@username}, телфон #{@phone}, указано время #{@datetime}, мастера #{@barber}, #{@color}."
 end
